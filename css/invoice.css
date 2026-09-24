@@ -1,0 +1,117 @@
+/* Page background */
+body {
+    background: #f4f6f8;
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Invoice container */
+.invoice-box {
+    max-width: 800px;
+    margin: 60px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Title */
+.invoice-box h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.invoice-box hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+/* Text */
+.invoice-box p {
+    margin: 6px 0;
+    color: #444;
+    font-size: 15px;
+}
+
+/* Section headings */
+.invoice-box h4 {
+    margin-top: 25px;
+    margin-bottom: 8px;
+    color: #34495e;
+    font-size: 16px;
+}
+
+/* Table */
+.invoice-box table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.invoice-box table th,
+.invoice-box table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.invoice-box table th {
+    background: #f1f3f5;
+    color: #333;
+    font-weight: 600;
+}
+
+.invoice-box table tr:nth-child(even) {
+    background: #fafafa;
+}
+
+/* Grand total row */
+.invoice-box table tr:last-child td {
+    background: #f8f9fa;
+    font-size: 15px;
+}
+
+/* Highlight price */
+.invoice-box td b {
+    color: #e67e22;
+}
+
+/* Footer info */
+.invoice-box .order-info {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Button */
+.invoice-box a {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: #e67e22;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.invoice-box a:hover {
+    background: #cf6d17;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .invoice-box {
+        padding: 20px;
+    }
+
+    .invoice-box table th,
+    .invoice-box table td {
+        padding: 6px;
+        font-size: 12px;
+    }
+}

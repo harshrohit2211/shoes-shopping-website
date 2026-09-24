@@ -1,0 +1,94 @@
+        /* ===== SHOP LAYOUT ===== */
+.shop-layout {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background: #f8f5fb;
+    min-height: 100vh;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+    width: 220px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.sidebar h3 {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 18px;
+    border-bottom: 2px solid #f0bd31;
+    padding-bottom: 5px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    padding: 8px 10px;
+    display: block;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background: #f0bd31;
+    color: #fff;
+}
+
+/* ===== MAIN CONTENT ===== */
+.main-content {
+    flex: 1;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.main-content h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    border-bottom: 2px solid #f0bd31;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* ===== PRODUCTS GRID ===== */
+/* Uses same .products & .product as index.css */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* Optional hover improvement */
+.product {
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+    .shop-layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+}

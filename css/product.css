@@ -1,0 +1,200 @@
+        /* General Reset & Typography */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: 'Times New Roman', serif; /* Use a premium serif font */
+    color: #1a1a1a;
+}
+
+.product-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* 4-Image Grid Section */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 60px;
+}
+
+.grid-item img {
+    width: 100%;
+    aspect-ratio: 1 / 1.2;
+    object-fit: cover;
+    filter: brightness(0.95);
+}
+
+/* Info Section Layout */
+.product-info-container {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+/* Left Content */
+.collection-label {
+    display: block;
+    color: #b39b6d; /* Muted Gold */
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.product-title {
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+    border-bottom: none;
+}
+
+.product-description {
+    line-height: 1.8;
+    color: #666;
+    font-size: 15px;
+    max-width: 450px;
+}
+
+/* Right Content & Form */
+.price-tag {
+    font-size: 28px;
+    text-align: right;
+    margin-bottom: 40px;
+}
+
+.specs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 30px;
+}
+
+.spec-box {
+    padding: 20px;
+    border: 0.5px solid #e5e5e5;
+    text-align: center;
+}
+
+.spec-box.full-width {
+    grid-column: span 2;
+}
+
+.spec-box label {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.spec-box select {
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Buttons */
+.btn-private {
+    width: 100%;
+    background-color: #000;
+    color: #b39b6d; /* Gold text on black */
+    border: none;
+    padding: 20px;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-private:hover {
+    background-color: #1a1a1a;
+    letter-spacing: 4px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .image-grid { grid-template-columns: repeat(2, 1fr); }
+    .product-info-container { grid-template-columns: 1fr; gap: 40px; }
+    .price-tag { text-align: left; }
+}
+
+/* ===============================
+   SIMILAR PRODUCTS SECTION
+=================================*/
+
+.similar-products-section {
+    max-width: 1200px;
+    margin: 100px auto 60px;
+    padding: 0 20px;
+}
+
+.similar-heading {
+    font-size: 22px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Grid Layout */
+.similar-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+/* Card */
+.similar-card {
+    text-align: center;
+}
+
+.similar-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1.2;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.similar-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Info */
+.similar-info {
+    margin-top: 15px;
+}
+
+.similar-info h4 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.similar-info p {
+    font-size: 14px;
+    color: #b39b6d;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .similar-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .similar-grid {
+        grid-template-columns: 1fr;
+    }
+}

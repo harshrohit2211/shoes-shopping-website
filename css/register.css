@@ -1,0 +1,122 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Page Background */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffffff, #f8f5fb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Register Box */
+.box {
+    background: #ffffff;
+    width: 400px;
+    padding: 35px 30px;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* Heading */
+.box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+/* Form Layout */
+.box form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Inputs */
+.box input {
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.box input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.4);
+}
+
+/* Button */
+.box button {
+    margin-top: 12px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #f0bd31;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.box button:hover {
+    background: #f4b400;
+    transform: translateY(-2px);
+}
+
+.box button:active {
+    transform: translateY(0);
+}
+
+/* Login Link */
+.link {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 13px;
+    color: #555;
+}
+
+.link a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 4px;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+
+/* Success & Error Messages */
+.success {
+    color: green;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    .box {
+        width: 90%;
+        padding: 30px 20px;
+    }
+}

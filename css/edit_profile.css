@@ -1,0 +1,83 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+/* PAGE CONTAINER */
+.account-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* FORM CARD */
+.account-box {
+    max-width: 600px;          /* 🔥 controls input width */
+    margin: 0 auto;            /* 🔥 centers form */
+    background: #fff;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+/* TITLE */
+.account-box h2 {
+    margin-bottom: 25px;
+    font-size: 24px;
+    border-bottom: 2px solid #f0b429;
+    padding-bottom: 10px;
+}
+
+/* LABEL */
+.account-box label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+/* INPUTS (NOT FULL WIDTH PAGE) */
+.account-box input,
+.account-box textarea {
+    width: 100%;               /* width limited by .account-box */
+    padding: 12px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* TEXTAREA */
+.account-box textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+/* BUTTON */
+.btn {
+    margin-top: 25px;
+    padding: 12px 22px;
+    background: #f0b429;
+    border: none;
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #d99e1f;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .account-box {
+        max-width: 100%;
+    }
+}

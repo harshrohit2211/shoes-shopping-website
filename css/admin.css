@@ -1,0 +1,140 @@
+/* ===== RESET ===== */
+*{
+    box-sizing:border-box;
+}
+
+/* ===== BODY ===== */
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    display:flex;
+    background:#f4f6f9;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar{
+    width:220px;
+    background:#1e4d3d;
+    color:white;
+    height:100vh;
+    padding:20px;
+    position:fixed;
+    left:0;
+    top:0;
+}
+
+.sidebar h2{
+    margin-bottom:30px;
+}
+
+.sidebar a{
+    display:block;
+    color:white;
+    padding:10px;
+    text-decoration:none;
+    margin-bottom:10px;
+    border-radius:5px;
+}
+
+.sidebar a:hover,
+.sidebar .active{
+    background:#2f7f63;
+}
+
+/* ===== MAIN CONTENT ===== */
+.main{
+    margin-left:220px;
+    flex:1;
+    padding:30px;
+}
+
+/* ===== DASHBOARD CARDS ===== */
+.cards{
+    display:flex;
+    gap:20px;
+    margin-bottom:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    flex:1 1 250px;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card.orange h2{ color:orange; }
+.card.green h2{ color:green; }
+
+/* ===== TABLE ===== */
+.table-wrapper{
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    background:white;
+    border-collapse:collapse;
+    border-radius:10px;
+    overflow:hidden;
+    min-width:700px;
+}
+
+th, td{
+    padding:12px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+th{
+    background:#1e4d3d;
+    color:white;
+}
+
+.status{
+    padding:5px 10px;
+    background:#2f7f63;
+    color:white;
+    border-radius:20px;
+    font-size:12px;
+}
+
+/* ============================= */
+/* ===== RESPONSIVE DESIGN ===== */
+/* ============================= */
+
+/* Tablet */
+@media(max-width:992px){
+
+    .cards{
+        flex-direction:column;
+    }
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+    body{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+        height:auto;
+        position:relative;
+    }
+
+    .main{
+        margin-left:0;
+        padding:20px;
+    }
+
+    table{
+        font-size:14px;
+    }
+
+    th, td{
+        padding:8px;
+    }
+}
